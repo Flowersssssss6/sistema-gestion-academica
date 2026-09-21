@@ -1,19 +1,10 @@
-from estudiantes import (
-    agregar_estudiante,
-    mostrar_estudiantes,
-    buscar_estudiante,
-)
-
-from notas import (
-    agregar_nota,
-    calcular_promedio,
-    estado_estudiante,
-)
+from estudiantes import agregar_estudiante, mostrar_estudiantes, buscar_estudiante
+from notas import agregar_nota, calcular_promedio, estado_estudiante
 
 
 def mostrar_menu():
     print("==================================")
-    print("   SISTEMA DE GESTIÓN ACADÉMICA   ")
+    print("   SISTEMA DE GESTION ACADEMICA   ")
     print("==================================")
     print("1. Registrar estudiante")
     print("2. Mostrar estudiantes")
@@ -26,7 +17,7 @@ def mostrar_menu():
 def main():
     while True:
         mostrar_menu()
-        opcion = input("Seleccione una opción: ").strip()
+        opcion = input("Seleccione una opcion: ").strip()
 
         if opcion == "1":
             agregar_estudiante()
@@ -44,8 +35,7 @@ def main():
             print("Saliendo del sistema...")
             break
         else:
-            print("Opción no válida. Intente de nuevo.\n")
-
+            print("Opcion no valida. Intente de nuevo.\n")
 
 if __name__ == "__main__":
     main()
